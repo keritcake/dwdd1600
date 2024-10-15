@@ -120,5 +120,33 @@ footer{
     color: #d30000;
     }
 
-                                    
-  
+
+    figure.wrapped {
+      width: 16%;
+      margin: 0;
+      float: right;
+  }
+  figure.wrapped img {
+      width: 100%;
+      height: auto;
+  }
+  figure.wrapped figcaption {
+      text-align: center;
+      font-size: .75rem;
+  }
+
+  div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+margin: .5rem 2% 0 0;
+
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #4527a0;
+}
