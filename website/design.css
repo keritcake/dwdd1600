@@ -150,3 +150,90 @@ div.gallery figcaption {
     font-size: .8rem;
     color: #4527a0;
 }
+
+
+
+
+
+
+
+
+/* main stuff here */
+main {
+  padding: 1rem 2vw;
+}
+
+main h1 {
+  color: #4527a0;
+  font-size: 2rem;
+  margin: .5rem 0 .8rem 0;
+}
+
+.wrapimage {
+  width: 50%;
+  margin: 0;
+  float: right;
+  margin-left: 2vw;
+}
+.wrapimage img {
+  width: 100%;
+  height: auto;
+}
+.wrapimage figcaption {
+  text-align: center;
+  font-size: .8rem;
+}
+
+.myForm fieldset {
+  border: 1px solid #960019;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.myForm legend{
+color:#960019;
+font-size: 1.2rem;
+
+
+}
+
+.myForm label {
+  margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea
+{
+display: block;
+
+
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea
+{
+border: solid 1px #960019;
+padding: .3rem;
+width: 250px; 
+border-radius: .3rem;
+  font-weight: 200;
+
+
+
+}
+
+.myForm textarea {
+
+height: 6rem;
+}
+
+.myForm :required {
+  background-color: #e0d2ff;
+}
+
+.myForm [type=submit] {
+  background-color: #4527a0;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  margin: 1rem 0 0 1vw;
+}
