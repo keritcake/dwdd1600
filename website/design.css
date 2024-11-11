@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 body{
     
 
@@ -17,6 +18,12 @@ font-style: normal;
 header{
     background-color: #f3b5c5;
     padding: .8rem 1%;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+  padding-left: 1vw;
 }
 
 header h1 {
@@ -31,32 +38,58 @@ header h1 {
   }
 
   /*navagation stuff here*/
+  /*small screens*/
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      margin: 0;
+      padding: 0 2%;
+      list-style-type: none;
+    }
 
-  nav{
-    background-color: #cec2eb;
-    
+    nav a {
+      display: block;
+      padding: .8rem;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      border-bottom: solid 1px #e0d2ff;
+      text-transform: uppercase;
+      color: #4527a0;
+    }
+
+
+  } /*end of media query*/
+  /*BIG SCREENS*/
+  @media only screen and (min-width: 601px) {
+    nav{
+      background-color: #cec2eb;
+      
+    }
+  
+    nav ul{
+  
+      list-style-type: none;
+      padding: 0 1vw;
+      margin: 0;
+      display: flex;
+    }
+  
+    nav a {
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #4527a0; 
+      font-weight: 700;
+      display: block;
+      padding: .83rem 2rem;
   }
+  
+  nav a:hover {
+      color: #960019;
+    }
 
-  nav ul{
+  } /*end of media query*/
 
-    list-style-type: none;
-    padding: 0 1vw;
-    margin: 0;
-    display: flex;
-  }
 
-  nav a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #4527a0; 
-    font-weight: 700;
-    display: block;
-    padding: .83rem 2rem;
-}
-
-nav a:hover {
-    color: #960019;
-  }
 
   /*main things*/
   main{
@@ -236,4 +269,18 @@ height: 6rem;
   border-radius: 10px;
   color: white;
   margin: 1rem 0 0 1vw;
+}
+
+.pinhero {
+  width: 100%;
+  margin:0;
+}
+
+.pinhero img {
+  width: 100%;
+  height: auto;
+}
+header, nav, main, footer {
+  max-width: 64rem;
+  margin: 0 auto;
 }
