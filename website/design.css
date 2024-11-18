@@ -128,6 +128,12 @@ header h1 {
                     width: 12.5rem;
                     border: 1px solid #4527a0;
                     border-radius: .5rem;
+                    margin: center;
+                  
+                  }
+
+                  main p {
+                    margin: center;
                   }
 
                   main a {
@@ -138,6 +144,33 @@ header h1 {
                   main a:hover {
                     color: #4527a0;
                                     }
+
+
+
+ table.our-value {
+width: 100%;
+border-collapse: collapse;
+}
+table.our-value th {
+background-color: #4527a0;
+color: white;
+padding: .5rem 1vw;
+text-align: left;
+ }  
+ 
+ table.our-value td {
+  color: #4527a0;
+  padding: .4rem 1vw;
+
+}
+
+table.our-value tr:nth-child(odd) {
+  background-color: #ffe7ed;
+}
+
+table.our-value tr:hover {
+  background-color: #e0d2ff;
+}
 
 footer{ 
 
